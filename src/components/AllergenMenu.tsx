@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { Search, Filter, X, ToggleLeft, ToggleRight, ChevronDown } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Search, Filter, X, ToggleLeft, ToggleRight, ChevronDown, Sun, Moon } from 'lucide-react';
 import { MENU_DATA, ALLERGEN_LIST, CATEGORIES, type MenuItem } from '../data/menuData';
 import { useTranslation, LANGUAGES, type Language } from '../hooks/useTranslation';
 import { Button } from './ui/button';
@@ -21,6 +21,15 @@ export function AllergenMenu() {
   const [selectedAllergens, setSelectedAllergens] = useState<string[]>([]);
   const [crossContaminationStrict, setCrossContaminationStrict] = useState(false);
   const [expandedDescriptions, setExpandedDescriptions] = useState<Set<number>>(new Set());
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }, [darkMode]);
 
   const toggleAllergenFilter = (allergen: string) => {
     setSelectedAllergens(prev => 
@@ -107,22 +116,48 @@ export function AllergenMenu() {
               </p>
             </div>
 
-            {/* Language Selector */}
-            <Select value={language} onValueChange={(value: Language) => setLanguage(value)}>
-              <SelectTrigger className="w-40 bg-white/10 border-white/20 text-primary-foreground">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                {LANGUAGES.map(lang => (
-                  <SelectItem key={lang.code} value={lang.code}>
-                    <div className="flex items-center gap-2">
-                      <span>{lang.flag}</span>
-                      <span>{lang.name}</span>
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <div className="flex items-center gap-3">
+              {/* Dark/Light Mode Toggle */}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setDarkMode(!darkMode)}
+                className="bg-white/10 border-white/20 text-primary-foreground hover:bg-white/20"
+              >
+                {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+              </Button>
+
+              {/* Language Selector */}
+              <Select value={language} onValueChange={(value: Language) => setLanguage(value)}>
+                <SelectTrigger className="w-40 bg-white/10 border-white/20 text-primary-foreground">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {LANGUAGES.map(lang => (
+                    <SelectItem key={lang.code} value={lang.code}>
+                      <div className="flex items-center gap-2" style={{
+                        backgroundImage: `url("data:image/svg+xml;base64,${btoa(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="${
+                          lang.code === 'en' ? '#012169' : 
+                          lang.code === 'fr' ? '#002395' : 
+                          lang.code === 'es' ? '#AA151B' : 
+                          lang.code === 'ru' ? '#FFFFFF' : 
+                          lang.code === 'it' ? '#009246' : 
+                          lang.code === 'de' ? '#000000' : 
+                          lang.code === 'zh' ? '#DE2910' : '#CCCCCC'
+                        }"/></svg>`)}")`,
+                        backgroundSize: '20px 14px',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'left center',
+                        paddingLeft: '24px'
+                      }}>
+                        <span>{lang.flag}</span>
+                        <span>{lang.name}</span>
+                      </div>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
 
           {/* Search Bar */}
@@ -167,21 +202,25 @@ export function AllergenMenu() {
 
             {/* Cross-contamination Toggle */}
             {selectedAllergens.length > 0 && (
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-cross-contamination/10 border border-cross-contamination/20">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-muted/50 border border-border">
                 <span className="text-sm font-medium">{t('crossContamination')}:</span>
                 <button
                   onClick={() => setCrossContaminationStrict(!crossContaminationStrict)}
-                  className="flex items-center gap-2 text-cross-contamination"
+                  className={`flex items-center gap-2 px-3 py-1 rounded-full transition-all ${
+                    crossContaminationStrict 
+                      ? 'bg-cross-contamination-on text-cross-contamination-on-foreground' 
+                      : 'bg-cross-contamination-off text-cross-contamination-off-foreground'
+                  }`}
                 >
                   {crossContaminationStrict ? (
                     <>
-                      <ToggleRight className="w-6 h-6" />
-                      <span className="text-sm">{t('crossContaminationOn')}</span>
+                      <ToggleRight className="w-5 h-5" />
+                      <span className="text-sm font-medium">{t('crossContaminationOn')}</span>
                     </>
                   ) : (
                     <>
-                      <ToggleLeft className="w-6 h-6" />
-                      <span className="text-sm">{t('crossContaminationOff')}</span>
+                      <ToggleLeft className="w-5 h-5" />
+                      <span className="text-sm font-medium">{t('crossContaminationOff')}</span>
                     </>
                   )}
                 </button>

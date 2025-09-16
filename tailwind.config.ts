@@ -36,9 +36,13 @@ export default {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
         },
-        "cross-contamination": {
-          DEFAULT: "hsl(var(--cross-contamination))",
-          foreground: "hsl(var(--cross-contamination-foreground))",
+        "cross-contamination-off": {
+          DEFAULT: "hsl(var(--cross-contamination-off))",
+          foreground: "hsl(var(--cross-contamination-off-foreground))",
+        },
+        "cross-contamination-on": {
+          DEFAULT: "hsl(var(--cross-contamination-on))",
+          foreground: "hsl(var(--cross-contamination-on-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
