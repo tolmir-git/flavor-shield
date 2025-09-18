@@ -21,7 +21,7 @@ export function AllergenMenu() {
   const [selectedAllergens, setSelectedAllergens] = useState<string[]>([]);
   const [crossContaminationStrict, setCrossContaminationStrict] = useState(false);
   const [expandedDescriptions, setExpandedDescriptions] = useState<Set<number>>(new Set());
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
