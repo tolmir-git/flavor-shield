@@ -706,7 +706,74 @@ export const MENU_DATA: MenuItem[] = [
     description: "Beef with black pepper sauce",
     allergens: [],
     traces: []
-  }
+  },
+  
+  // Drinks
+  { id: 86, name: 'Dragon fruit lemonade', category: 'Drinks', description: 'Refreshing dragon fruit lemonade', price: '4.50', allergens: [], traces: [] },
+  { id: 87, name: 'Passion fruit lemonade', category: 'Drinks', description: 'Tropical passion fruit lemonade', price: '4.50', allergens: [], traces: [] },
+  { id: 88, name: 'Strawberry lemonade', category: 'Drinks', description: 'Fresh strawberry lemonade', price: '4.50', allergens: [], traces: [] },
+  { id: 89, name: 'Peach lemonade', category: 'Drinks', description: 'Sweet peach lemonade', price: '4.50', allergens: [], traces: [] },
+  { id: 90, name: 'Pineapple lemonade', category: 'Drinks', description: 'Tropical pineapple lemonade', price: '4.50', allergens: [], traces: [] },
+  { id: 91, name: 'Magic lemonade', category: 'Drinks', description: 'Special house lemonade', price: '5.00', allergens: [], traces: [] },
+  { id: 92, name: 'Strawberry matcha latte', category: 'Drinks', description: 'Matcha latte with strawberry', price: '5.50', allergens: ['milk'], traces: [] },
+  { id: 93, name: 'Dubai bubble tea', category: 'Drinks', description: 'Premium bubble tea', price: '6.00', allergens: ['milk', 'soya', 'mustard'], traces: [] },
+  
+  // Cocktails  
+  { id: 94, name: 'Movie night', category: 'Drinks', description: 'Special cocktail for movie nights', price: '9.50', allergens: [], traces: [] },
+  { id: 95, name: 'Sexy colada', category: 'Drinks', description: 'Tropical colada cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 96, name: 'Kiss & fizz', category: 'Drinks', description: 'Fizzy romantic cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 97, name: 'Bubble crush', category: 'Drinks', description: 'Fruity bubble cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 98, name: 'Pornstar spritz', category: 'Drinks', description: 'Sparkling passion fruit cocktail', price: '10.50', allergens: [], traces: [] },
+  { id: 99, name: 'Peachy sour', category: 'Drinks', description: 'Sour peach cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 100, name: 'Dubaitini', category: 'Drinks', description: 'Premium Dubai-style martini', price: '12.50', allergens: ['eggs', 'sulphur'], traces: [] },
+  { id: 101, name: 'Magic gin tonic', category: 'Drinks', description: 'House special gin & tonic', price: '8.50', allergens: [], traces: [] },
+  { id: 102, name: 'Soho breeze', category: 'Drinks', description: 'Light and refreshing cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 103, name: 'Raspberry kiss', category: 'Drinks', description: 'Sweet raspberry cocktail', price: '9.50', allergens: [], traces: [] },
+  { id: 104, name: 'Aperol spritz', category: 'Drinks', description: 'Classic Italian aperitif', price: '8.50', allergens: [], traces: [] },
+  { id: 105, name: 'Peachy mojito', category: 'Drinks', description: 'Peach-infused mojito', price: '9.00', allergens: [], traces: [] },
+  { id: 106, name: 'Dragon mojito', category: 'Drinks', description: 'Dragon fruit mojito', price: '9.50', allergens: [], traces: [] },
+  { id: 107, name: 'Strawberry mojito', category: 'Drinks', description: 'Fresh strawberry mojito', price: '9.00', allergens: [], traces: [] },
+  { id: 108, name: 'Mojito', category: 'Drinks', description: 'Classic Cuban mojito', price: '8.50', allergens: [], traces: [] },
+  { id: 109, name: 'Lychee martini', category: 'Drinks', description: 'Exotic lychee martini', price: '10.50', allergens: [], traces: [] },
+  { id: 110, name: 'Pina Colada', category: 'Drinks', description: 'Tropical pineapple and coconut', price: '9.50', allergens: [], traces: [] },
+  { id: 111, name: 'Happy pornstarr', category: 'Drinks', description: 'House special passion fruit cocktail', price: '10.50', allergens: [], traces: [] },
+  { id: 112, name: 'Pornstarr martini', category: 'Drinks', description: 'Classic passion fruit martini', price: '10.50', allergens: [], traces: [] },
+  { id: 113, name: 'Strawberry daiquiri', category: 'Drinks', description: 'Frozen strawberry daiquiri', price: '9.50', allergens: [], traces: [] },
+  { id: 114, name: 'Long island ice tea', category: 'Drinks', description: 'Classic strong mixed cocktail', price: '11.50', allergens: [], traces: [] },
+  
+  // More Beef dishes
+  { id: 115, name: '9 OZ Skirt Steak', category: 'Beef', description: 'Tender skirt steak grilled to perfection', price: '24.50', allergens: ['gluten', 'fish', 'milk'], traces: [] },
+  { id: 116, name: '9 OZ Sirloin Steak', category: 'Beef', description: 'Premium sirloin steak', price: '26.50', allergens: ['gluten', 'fish', 'milk'], traces: [] },
+  { id: 117, name: '10 OZ Argentinian Rib Eye Steak', category: 'Beef', description: 'Premium Argentinian rib eye', price: '32.50', allergens: ['gluten', 'eggs', 'milk', 'mustard'], traces: [] },
+  { id: 118, name: 'Iberico Pork Ribs', category: 'Beef', description: 'Premium Iberico pork ribs', price: '28.50', allergens: ['gluten', 'eggs', 'mustard'], traces: [] },
+  
+  // Mixed dishes from sixth file
+  { id: 119, name: 'Shopska Salad', category: 'Salads', description: 'Traditional Bulgarian salad', price: '8.50', allergens: ['gluten'], traces: [] },
+  { id: 120, name: 'Avocado Caprese', category: 'Salads', description: 'Avocado with mozzarella and tomato', price: '9.50', allergens: ['gluten', 'crustaceans', 'mollusc'], traces: [] },
+  { id: 121, name: 'Lady Cobb', category: 'Salads', description: 'Elegant Cobb salad variation', price: '11.50', allergens: ['gluten', 'crustaceans'], traces: [] },
+  { id: 122, name: 'Mashed Potatoes', category: 'Starters', description: 'Creamy mashed potatoes', price: '4.50', allergens: ['gluten'], traces: [] },
+  { id: 123, name: 'Pulled Chicken', category: 'Chicken', description: 'Tender pulled chicken', price: '12.50', allergens: ['gluten', 'eggs'], traces: [] },
+  { id: 124, name: 'Nachos', category: 'Starters', description: 'Crispy tortilla chips with toppings', price: '7.50', allergens: [], traces: [] },
+  { id: 125, name: 'Fries', category: 'Starters', description: 'Crispy golden fries (Vegetarian)', price: '4.50', allergens: ['eggs'], traces: [] },
+  { id: 126, name: 'Sweet potato Fries', category: 'Starters', description: 'Crispy sweet potato fries (Vegan)', price: '5.50', allergens: [], traces: [] },
+  { id: 127, name: 'Homemade Guacamole', category: 'Starters', description: 'Fresh avocado guacamole (Vegan)', price: '6.50', allergens: ['gluten', 'milk'], traces: [] },
+  { id: 128, name: 'BBQ pork ribs', category: 'Beef', description: 'Smoky BBQ pork ribs', price: '22.50', allergens: ['crustaceans'], traces: [] },
+  { id: 129, name: 'Humus & Guacamole', category: 'Starters', description: 'Chickpea hummus with guacamole (Vegan)', price: '7.50', allergens: ['gluten', 'eggs', 'lupin', 'milk'], traces: [] },
+  { id: 130, name: 'Grilled Calamari', category: 'Seafood', description: 'Fresh grilled squid', price: '14.50', allergens: ['gluten', 'nuts'], traces: [] },
+  
+  // Desserts
+  { id: 131, name: 'Chocolate Souffle', category: 'Desserts', description: 'Rich chocolate souffle', price: '7.50', allergens: ['celery', 'crustaceans', 'fish', 'mollusc'], traces: [] },
+  { id: 132, name: 'Vegetarian Pornstar Chocolate mousse', category: 'Desserts', description: 'Passion fruit chocolate mousse (Vegetarian)', price: '6.50', allergens: ['celery', 'crustaceans', 'fish'], traces: [] },
+  { id: 133, name: 'Oreo loaded croissant', category: 'Desserts', description: 'Croissant stuffed with Oreos', price: '8.50', allergens: ['celery', 'crustaceans', 'fish', 'lupin', 'milk'], traces: [] },
+  { id: 134, name: 'Crème Brulee', category: 'Desserts', description: 'Classic French crème brûlée', price: '6.50', allergens: ['celery', 'fish'], traces: [] },
+  { id: 135, name: 'Vegetarian Cookies & Cream Cake', category: 'Desserts', description: 'Cookies and cream layer cake (Vegetarian)', price: '7.50', allergens: ['celery', 'crustaceans', 'eggs', 'fish', 'lupin', 'milk'], traces: [] },
+  { id: 136, name: 'Dubai Bowl', category: 'Desserts', description: 'Signature Dubai dessert bowl', price: '9.50', allergens: ['celery', 'crustaceans', 'eggs', 'fish', 'lupin'], traces: [] },
+  { id: 137, name: 'Dubai Waffle', category: 'Desserts', description: 'Premium Dubai-style waffle', price: '8.50', allergens: ['celery', 'crustaceans', 'fish', 'milk'], traces: [] },
+  { id: 138, name: 'Dubai Strawberries', category: 'Desserts', description: 'Gold-dusted strawberries', price: '12.50', allergens: ['celery', 'fish', 'milk'], traces: [] },
+  { id: 139, name: 'Happy tiramisu', category: 'Desserts', description: 'House special tiramisu', price: '7.50', allergens: ['celery', 'crustaceans', 'eggs', 'fish', 'lupin', 'milk'], traces: [] },
+  { id: 140, name: 'Freshly baked cookie dough', category: 'Desserts', description: 'Warm cookie dough dessert', price: '6.50', allergens: ['celery', 'crustaceans', 'eggs', 'fish', 'lupin'], traces: [] },
+  { id: 141, name: 'Ice Cream', category: 'Desserts', description: 'Selection of ice cream flavors', price: '4.50', allergens: ['celery', 'fish'], traces: [] },
+  { id: 142, name: 'Sorbet', category: 'Desserts', description: 'Fresh fruit sorbet (Vegan)', price: '4.50', allergens: ['soya'], traces: [] }
 ];
 
 export const ALLERGEN_LIST = [
@@ -726,4 +793,4 @@ export const ALLERGEN_LIST = [
   { key: "sulphur", icon: "⚡" }
 ];
 
-export const CATEGORIES = ["All", "Salads", "Starters", "Seafood", "Asia", "Mexico", "Burgers", "Pasta", "Chicken", "Beef"];
+export const CATEGORIES = ["All", "Salads", "Starters", "Seafood", "Asia", "Mexico", "Burgers", "Pasta", "Chicken", "Beef", "Drinks", "Desserts"];

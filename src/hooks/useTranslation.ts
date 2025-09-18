@@ -29,9 +29,15 @@ const TRANSLATIONS = {
       All: "All Dishes",
       Salads: "Salads",
       Starters: "Starters", 
-      Mains: "Main Courses",
-      Desserts: "Desserts",
-      Drinks: "Beverages"
+      Seafood: "Seafood",
+      Asia: "Asian Cuisine",
+      Mexico: "Mexican Cuisine", 
+      Burgers: "Burgers",
+      Pasta: "Pasta",
+      Chicken: "Chicken Dishes",
+      Beef: "Beef Dishes",
+      Drinks: "Beverages",
+      Desserts: "Desserts"
     },
     allergens: {
       celery: "Celery",
@@ -67,9 +73,15 @@ const TRANSLATIONS = {
       All: "Tous les Plats",
       Salads: "Salades",
       Starters: "Entrées",
-      Mains: "Plats Principaux", 
-      Desserts: "Desserts",
-      Drinks: "Boissons"
+      Seafood: "Fruits de mer",
+      Asia: "Cuisine asiatique",
+      Mexico: "Cuisine mexicaine",
+      Burgers: "Burgers", 
+      Pasta: "Pâtes",
+      Chicken: "Plats de poulet",
+      Beef: "Plats de bœuf",
+      Drinks: "Boissons",
+      Desserts: "Desserts"
     },
     allergens: {
       celery: "Céleri",
@@ -105,9 +117,15 @@ const TRANSLATIONS = {
       All: "Todos los Platos",
       Salads: "Ensaladas",
       Starters: "Entrantes",
-      Mains: "Platos Principales",
-      Desserts: "Postres", 
-      Drinks: "Bebidas"
+      Seafood: "Mariscos",
+      Asia: "Cocina asiática", 
+      Mexico: "Cocina mexicana",
+      Burgers: "Hamburguesas",
+      Pasta: "Pasta",
+      Chicken: "Platos de pollo",
+      Beef: "Platos de carne",
+      Drinks: "Bebidas",
+      Desserts: "Postres"
     },
     allergens: {
       celery: "Apio",
@@ -143,9 +161,15 @@ const TRANSLATIONS = {
       All: "Все Блюда",
       Salads: "Салаты",
       Starters: "Закуски",
-      Mains: "Основные Блюда",
-      Desserts: "Десерты",
-      Drinks: "Напитки"
+      Seafood: "Морепродукты",
+      Asia: "Азиатская кухня",
+      Mexico: "Мексиканская кухня",
+      Burgers: "Бургеры",
+      Pasta: "Паста", 
+      Chicken: "Блюда из курицы",
+      Beef: "Блюда из говядины",
+      Drinks: "Напитки",
+      Desserts: "Десерты"
     },
     allergens: {
       celery: "Сельдерей",
@@ -181,9 +205,15 @@ const TRANSLATIONS = {
       All: "Tutti i Piatti",
       Salads: "Insalate",
       Starters: "Antipasti",
-      Mains: "Piatti Principali",
-      Desserts: "Dessert",
-      Drinks: "Bevande"
+      Seafood: "Pesce e frutti di mare",
+      Asia: "Cucina asiatica",
+      Mexico: "Cucina messicana",
+      Burgers: "Hamburger",
+      Pasta: "Pasta",
+      Chicken: "Piatti di pollo", 
+      Beef: "Piatti di manzo",
+      Drinks: "Bevande",
+      Desserts: "Dessert"
     },
     allergens: {
       celery: "Sedano",
@@ -219,9 +249,15 @@ const TRANSLATIONS = {
       All: "Alle Gerichte",
       Salads: "Salate",
       Starters: "Vorspeisen",
-      Mains: "Hauptgerichte",
-      Desserts: "Desserts",
-      Drinks: "Getränke"
+      Seafood: "Meeresfrüchte",
+      Asia: "Asiatische Küche",
+      Mexico: "Mexikanische Küche",
+      Burgers: "Burger",
+      Pasta: "Pasta",
+      Chicken: "Hähnchengerichte",
+      Beef: "Rindfleischgerichte",
+      Drinks: "Getränke",
+      Desserts: "Desserts"
     },
     allergens: {
       celery: "Sellerie",
@@ -257,9 +293,15 @@ const TRANSLATIONS = {
       All: "所有菜品",
       Salads: "沙拉",
       Starters: "开胃菜",
-      Mains: "主菜",
-      Desserts: "甜点",
-      Drinks: "饮料"
+      Seafood: "海鲜",
+      Asia: "亚洲菜",
+      Mexico: "墨西哥菜",
+      Burgers: "汉堡",
+      Pasta: "意大利面",
+      Chicken: "鸡肉菜品",
+      Beef: "牛肉菜品",
+      Drinks: "饮料",
+      Desserts: "甜点"
     },
     allergens: {
       celery: "芹菜",
