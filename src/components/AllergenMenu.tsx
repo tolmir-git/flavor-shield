@@ -25,9 +25,9 @@ export function AllergenMenu() {
 
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.removeAttribute('data-theme');
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
 
@@ -206,7 +206,7 @@ export function AllergenMenu() {
                 <span className="text-sm font-medium">{t('crossContamination')}:</span>
                 <button
                   onClick={() => setCrossContaminationStrict(!crossContaminationStrict)}
-                  className={`flex items-center gap-2 px-3 py-1 rounded-full transition-all ${
+                  className={`flex items-center gap-2 px-3 py-1 rounded-full transition-smooth ${
                     crossContaminationStrict 
                       ? 'bg-cross-contamination-on text-cross-contamination-on-foreground' 
                       : 'bg-cross-contamination-off text-cross-contamination-off-foreground'

@@ -47,8 +47,10 @@
     --ring: 43 74% 66%;
 
     /* Cross-contamination toggle colors */
-    --cross-contamination: 259 94% 71%;
-    --cross-contamination-foreground: 0 0% 100%;
+    --cross-contamination-off: 217 91% 60%; /* Blue for off (allowed) */
+    --cross-contamination-off-foreground: 0 0% 100%;
+    --cross-contamination-on: 259 94% 71%; /* Purple for on (not allowed) */
+    --cross-contamination-on-foreground: 0 0% 100%;
 
     --radius: 0.75rem;
 
@@ -120,8 +122,10 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 43 80% 70%;
 
-    --cross-contamination: 259 94% 75%;
-    --cross-contamination-foreground: 222.2 84% 4.9%;
+    --cross-contamination-off: 217 91% 65%; /* Blue for off (allowed) */
+    --cross-contamination-off-foreground: 0 0% 100%;
+    --cross-contamination-on: 259 94% 75%; /* Purple for on (not allowed) */
+    --cross-contamination-on-foreground: 222.2 84% 4.9%;
 
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-card: linear-gradient(180deg, hsl(var(--background)), hsl(217.2 40% 8%));
